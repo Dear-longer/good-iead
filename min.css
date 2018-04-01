@@ -1,0 +1,33 @@
+body{
+	background: red;
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+#nav li{
+	float: left;
+	width: 20px;
+	height: 30px;
+	background-color: #ff0;
+	line-height: 30px; 
+	 // 垂直居中
+	text-align: center;
+	// 文本对齐方式居中
+}
+#nav li:hover{
+	background-color: #00f;
+	font: 
+}
+#nav ul{
+	border-radius: 5px;
+	width: 100%;圆角
+	height: 30px;
+	overflow: hidden;
+}
+#nav li a{
+	text-decoration: none;
+	color: #000;
+}

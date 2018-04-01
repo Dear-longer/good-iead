@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zuoye1</title>
+	<style>
+		
+	</style>
+</head>
+<body>
+		<script type="text/javascript">
+		var data=[
+		{
+			name: "姓名",
+			age:"年龄",
+			grade:"段位",
+			sex:"性别",
+		 },
+		{
+			name: "张三",
+			age:18,
+			grade:"黄金",
+			sex:"男",
+		 },
+		 {
+		 	name:"李四",
+			age:19,
+			grade:"钻石",
+			sex:"女",
+		},
+		{
+			name:"老王",
+			age:45,
+			grade:"青铜",
+			sex:"男",
+		},
+		{
+			name:"老李",
+			age:33,
+			grade:"王者",
+			sex:"男",
+		}
+		];	 
+		
+		
+			var a="<table border=1>";
+
+            for(var i in data){
+
+           
+            a+="<tr class='aaa"+(i%2)+"'>";
+
+			for(var j in data[i]){
+				a+="<td>";
+				a+=data[i][j];
+				a+="</td>";
+			}
+				a+="</tr>";
+			}
+			a+="</table>";
+			document.body.innerHTML=a;
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cssdemo</title>
+	<link rel="stylesheet" type="text/css" href="one.css">
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		li{
+			color: red;
+		}
+		#container{
+			width: 150px;
+			height: 40px;
+			font-size: 12px !important;
+
+		}
+		.ord{
+			color: #ff0;
+		}
+		.bigFont{
+			font-size: 20px;
+		}
+		a[href$=".docx"]{
+			background-image: url(//wkstatic.bdimg.com/static/wkcommon/pkg/pkg_wkcommon_base_z_6fd720e.png);
+			background-position: -193px 991px;
+			background-repeat: no-repeat;
+			
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<p>
+			桃花坞里桃花庵，
+			桃花阉前种桃树；
+		</p>
+	</div>
+	<p id="container" class="bigFont" style="font-size:20px !important;">
+		the day is good day     
+	</p>
+	<ul> 
+		<li>列表项</li>
+		<li class="ord.haha">列表项</li>
+		<li>列表项</li>
+		<li class="ord">列表项</li>
+		<a href="#"><li>列表项</li></a>
+	</ul>
+	<li>这是ul之外的一个li</li>
+	<span>祖国的花朵</span>
+	<a href="English.docx">英语单词5000个</a>
+</body>
+</html>

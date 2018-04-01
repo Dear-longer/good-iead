@@ -1,0 +1,23 @@
+body{
+	background: #009688;
+}
+.ord{/*class选择器*/
+	color: #f0f;
+}
+ul li{/*后代选择器*/
+	font-size: 15px;
+	font-family: 宋体;
+}
+ul>li{/*子选择器*/
+font-size: 20px;
+font-family: 黑体;
+}
+span,.ord{
+	background-color: rgba(0,0,0,0.3);
+}
+ul+span{
+	line-height: 30px;
+	color: red;
+}.ord.haha{
+	background-color: rgba(255,0,0,0.3);
+}

@@ -1,0 +1,73 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	   *{/*固定浮动布局*/
+			margin: 0;
+			padding: 0;
+	    }
+		#root{
+			width: 1000px;
+			min-height: 800px;
+			margin: 0px auto;
+			position: relative;
+/*子元素绝对定位于父元素，要求父元素必须明确定位*/
+		}
+		#header{
+			height: 100px;
+			background-color: #ccc;
+		}
+		#left{
+			height: 700px;
+			width: 200px;
+			background-color: #ff0;
+			position: absolute;
+			top: 100px;
+			
+
+		}
+		#middel{
+			height: 700px;
+			width: 400px;
+			background-color: #f00;
+			position: absolute;
+			top: 100px;
+			left: 200px;
+
+		}
+		#right{
+			height: 700px;
+			width: 400px;
+			background-color: #f0f;
+			position: absolute;
+			top: 100px;
+			right: 0;
+			
+
+
+		}
+		#foot{
+			clear: both;/*清除*/
+			height: 100px;
+			width: 1000px;
+	        background-color: #000;
+			position: absolute;
+			bottom: 0;
+
+		}
+	
+	</style>
+</head>
+<body> <!--CSS+Div布局-->
+<div id="root">
+	<div id="header"></div>
+	<div id="left"></div>
+	<div id="middel"></div>
+	<div id="right"></div>
+	<div id="foot"></div>
+</div>
+	
+</body>
+<html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		label{
+			width: 150px;
+			display: inline-block;
+			text-align: right;
+			font-weight: 800;
+		}
+		.item{
+			margin: 10px 2px;
+		}
+
+		input{
+			height: 20px;
+			border-radius: 5px;
+		}
+		.item>a{
+			text-decoration: none;
+			color: #000;
+			display: inline-block;
+			height: 30px;
+			width: 50px;
+			background: #f00;
+			text-align: center;;
+			line-height: 30px;
+		}
+		#userNameInfo{
+			color: red;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="root">
+		<form>
+			<div class="item">
+				<label for="userName">用户名</label>
+				<input type="text" id="userName">
+				<span id="userNameInfo"></span>
+
+
+			</div>
+			<div class="item">
+				<label for="pass">密码</label>
+				<input type="possword" id="pass">
+			</div>
+			<div class="item">
+				<label ></label>
+				<a href="javascript:valify()">提交</a>
+				
+			</div>
+		</form>
+		<script>
+			function id(a){
+				return document.getElementById(a);
+			}
+			function isLetter(c){//是英文字母
+				//console.error(c);
+					var zf="qwertyuiopasdfghjklzxcvbnm";
+					return zf.indexOf(c)!=-1;
+			}
+			// isLetter('a');
+			// isLetter('fsafsg');
+			//验证表单中的内容是否合法
+			function valify(argument){
+				//用户名必须是5-16位的英文字母
+				var unl=id('userName').value.length;
+				var vvv=id('userName').value;
+				if(unl<5||unl>16){
+					//alert("用户名格式错误");
+					 id("userNameInfo").innerHTML="用户名格式错误！"
+				}else{
+					for(var i=0;i<unl;i++){
+						var iszf=isLetter(vvv[i]);
+						if(!iszf){
+							alert("只能用英文！")
+						}
+					}
+				}
+				
+			}
+		</script>
+	</div>
+	
+</body>
+</html>

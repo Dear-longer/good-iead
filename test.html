@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zzl</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		label{
+			width: -20px;
+			display: inline-block;
+			text-align: right;
+			font-weight: 0;
+		}
+		.item>a{
+			background: #d66;
+		}
+	</style>
+</head>
+<body>
+	<div id="root">
+		<table width="50%" height="30px" border="1px" id="tab">
+			<tr>
+				<td id="name">姓名</td>
+				<td id="sex">性别</td>
+				<td id="age">年龄</td>
+				<td id="level">等级</td>
+			</tr>
+
+		</table>
+		<form >
+			<div class="item">
+				<label for="name"></label>
+				<input type="text" id="name">
+
+				<label for="sex"></label>
+				<input type="text" id="sex">
+
+				<label for="age"></label>
+				<input type="text" id="age">
+
+				<label for="level"></label>
+				<input type="text" id="level">
+
+			</div>
+			<div class="item">
+				<label ></label>
+				<a href="javascript:valify()">确定提交</a>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

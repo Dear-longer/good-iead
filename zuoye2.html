@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>计算房贷月供</title>
+</head>
+<body>
+	<p id="a"></p>
+	<script type="text/javascript">
+		// 房子150W
+		// 首付30W
+		// 贷款年华4.95%
+		// 贷款期限20年
+//计算公式每一块钱每个月还=（1+月利率）**期数*月利率/（1+月利率）**期数-1
+var b=0.0495/12;
+var a=Math.pow(1+b,240)*b/
+(Math.pow(1+b,240)-1)*1200000;
+document.body.innerHTML=a;
+	</script>
+	
+</body>
+</html>

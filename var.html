@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p id="htmlstr" ></p>
+	<script type="text/javascript">
+		// var a=Math.PI;
+		// b=a*20+10;
+
+
+
+		console.info(typeof(1));//number
+		console.info(typeof('1'));//string
+		console.info(typeof('1'*'a'));//number
+		console.info(typeof(ddd));//underfined
+		console.info(typeof(null));//object
+		console.info(typeof('1'==1));//boolean
+
+var name="张三";
+var age=18;
+var htmlstr="";
+
+htmlstr=htmlstr+"<h1>"+name+"</h1><h1>"+age+"</h1>";
+
+document.body.innerHTML=htmlstr;
+
+var a =10;
+a==10 && console.log('你好');
+a==10 || console.log('你完蛋了');
+
+	</script>
+	
+</body>
+</html>
